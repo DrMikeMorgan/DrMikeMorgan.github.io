@@ -1,0 +1,59 @@
+<html>
+<head>
+
+</head>
+<body>
+
+Enter your J number</br>
+<input id="Jnum" maxlength="6" size="8"></input>
+<button onclick="buildGraph('myCanvas');buildConstellation('constellationCanvas');buildChips('Chips','Symbols')" autofocus> Enter </button> </br>
+<button onclick="buildGraph('myCanvas',0)"> Hide Edge Weights </button>
+<button onclick="buildGraph('myCanvas')"> Show Edge Weights </button> </br>
+<canvas id="myCanvas" width="480" height="360"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+<canvas id = "constellationCanvas" width = "360" Height = "360"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+</br>
+CDMA chip codes: </br>
+<table id = 'Chips'>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+</table>
+</br>
+
+<table id = 'Symbols'>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+  <tr>
+    <th></th>
+    <td></td>
+  </tr>
+</table>
+
+
+<script src="Graph.js"></script>
+<script src="JRandomiser.js"></script>
+<script src="Constellation.js"></script>
+<script src="Chips.js"></script>
+</body>
+</html>
