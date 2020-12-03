@@ -2,7 +2,7 @@ class JRandomiser{
 
   constructor(Jnum)
   {
-    let pepper = "122"
+    let pepper = "13422"
   	this.s = BigInt(parseInt(Jnum.substring(1,6) + pepper, 10));
   	this.m = BigInt(Math.pow(2,32));
   	this.a = BigInt(1664525);
