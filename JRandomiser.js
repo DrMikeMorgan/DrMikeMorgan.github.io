@@ -3,7 +3,7 @@ class JRandomiser{
   constructor(Jnum)
   {
     let pepper = "53924"
-  	this.s = BigInt(parseInt(Jnum.substring(1,6) + pepper, 10));
+  	this.s = BigInt(parseInt(Jnum.substring(1,Jnum.length) + pepper, 10));
   	this.m = BigInt(Math.pow(2,32));
   	this.a = BigInt(1664525);
   	this.c = BigInt(1013904223);
@@ -29,7 +29,9 @@ class JRandomiser{
 
   static validate(str)
   {
-  	if(str.length != 6)
+  	if(str.length < 6)
+  		return false;
+  	if(str.length > 7)
   		return false;
   	if(str[0] != 'j' && str[0] != 'J')
   		return false;
