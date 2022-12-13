@@ -11,16 +11,20 @@ function unique(l, n)
 
 function listUnique(jr, len)
 {
-    var result;
+    var result; 
+    var total;
     do
     {
+    	total = 0;
         result = [];
         for (var i=0; i<len; i++)
         {
             result.push(jr.randInt(1,100));
+            total += result[i];
         }
     }
-    while(!unique(result, len));
+    while(!unique(result, len) || total % 4 != 0);
+
     result.sort(function(a, b){return a-b}); 
     return result;   
 }
