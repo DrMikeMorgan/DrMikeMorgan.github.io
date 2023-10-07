@@ -68,21 +68,25 @@ function generate(){
 		para2.removeChild(para2.lastChild)
 	}
 	const node1 = document.createTextNode("IP address: " + RandomIP());
-	const node2 = document.createTextNode("\nSubnet Mask: " + RandomSubnet());
-	const node3 = document.createTextNode("\nNetwork Address: " );
-	const node4 = document.createTextNode("\nHost Address: " );
+	const node2 = document.createTextNode("Subnet Mask: " + RandomSubnet());
+	const node3 = document.createTextNode("Network Address: " );
+	const node4 = document.createTextNode("Host Address:\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 " );
 	para1.appendChild(node1);
 	para2.appendChild(node2);
 	
-	para3 = document.getElementById('ans')
+	para3 = document.getElementById('ansNet')
 	while (para3.hasChildNodes()){
 		para3.removeChild(para3.lastChild)
+	}
+	para4 = document.getElementById('ansHost')
+	while (para4.hasChildNodes()){
+		para4.removeChild(para4.lastChild)
 	}
 	network = document.createElement("input")
 	host = document.createElement("input")
 	network.id = "NetInput"
 	host.id = "HostInput"
-	tcsize = 16
+	tcsize = 20
 	
 	tickcross1 = document.createElement("img")
 	tickcross1.width = tcsize
@@ -98,16 +102,16 @@ function generate(){
 	para3.appendChild(node3)
 	para3.appendChild(network)
 	para3.appendChild(tickcross1)
-	para3.appendChild(node4)
-	para3.appendChild(host)
-	para3.appendChild(tickcross2)
+	para4.appendChild(node4)
+	para4.appendChild(host)
+	para4.appendChild(tickcross2)
 	
-	para4 = document.getElementById('btn')
-	while (para4.hasChildNodes()){
-		para4.removeChild(para4.lastChild)
+	para5 = document.getElementById('btn')
+	while (para5.hasChildNodes()){
+		para5.removeChild(para5.lastChild)
 	}
 	check = document.createElement("button")
 	check.innerHTML = "\nCheck Answer"
 	check.addEventListener('click', checker);
-	para4.appendChild(check)
+	para5.appendChild(check)
 }
