@@ -25,7 +25,7 @@ function listUnique(jr, len)
     }
     while(!unique(result, len) || total % 4 != 0);
 
-    result.sort(function(a, b){return a-b}); 
+    result.sort(function(a, b){return b-a}); 
     return result;   
 }
 
