@@ -28,11 +28,9 @@ body {
   padding-right: 20px;
   max-width: 540px;
   color: #111;
-  font-family: 'Old Standard TT', serif; 
   margin: auto;
-  width: 85%;
+  width: 60%;
   text-align: left;
-  
 }
 .submit {
   border: solid #999 1px;
@@ -43,6 +41,21 @@ body {
   padding-left: 20px;
   padding-bottom: 10px;
   padding-right: 20px;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  max-width: 540px;
+}
+.submit2 {
+  border: solid #999 1px;
+	border-radius: 2px;
+	box-shadow: 2px 1px 5px #112;
+  background-color: #fffff6;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  font-family: monospace, monospace;
   text-align: center;
   margin: auto;
   width: 60%;

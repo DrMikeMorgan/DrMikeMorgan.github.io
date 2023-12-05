@@ -35,7 +35,7 @@ class JRandomiser{
   		return false;
   	if(str[0] != 'j' && str[0] != 'J')
   		return false;
-  	for(var i=1; i<6; ++i)
+  	for(var i=1; i<str.length; ++i)
   		if(str[i] < '0' || str[i] > '9')
   		return false;
   	return true;
