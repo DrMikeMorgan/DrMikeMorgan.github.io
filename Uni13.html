@@ -9,7 +9,7 @@ function cvt(xs)
     str = ""
     for (var x in xs)
     {
-        var URL = "https://uni2.playstarfleet.com/galaxy/show?current_planet=1&galaxy=" + xs[x].split(':')[0] + "&solar_system=" + xs[x].split(':')[1]
+        var URL = "https://uni13.playstarfleet.com/galaxy/show?current_planet=1&galaxy=" + xs[x].split(':')[0] + "&solar_system=" + xs[x].split(':')[1]
         str = str + "<a href=\"" + URL + "\" target=\"_blank\">" + "[" + xs[x].toString() + ":0] </a> "
     }
     return str
